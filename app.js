@@ -1,6 +1,5 @@
 let playerScore = 0;
 let computerScore = 0;
-
 const playerSCore_a = document.getElementById("playerScore");
 const computerScore_a = document.getElementById("computerScore");
 const playerOption_a = document.getElementById("playerOption");
@@ -32,9 +31,7 @@ function main(){
 }
 
 function game(playerOption){
-
     let computerOption = getComputerOption();
-
     switch (playerOption + computerOption) {
         case 'rs':
         case 'pr':
@@ -76,13 +73,3 @@ function transformToWord(option){
     if(option === 'p') return "Papel";
     if(option === 's') return "Tesoura";
 }
-
-// console.log(playerSCore_a);
-// console.log(computerScore_a);
-// console.log(playerOption_a);
-// console.log(computerOption_a);
-// console.log(gameStatus_a);
-// console.log(r_div);
-// console.log(p_div);
-// console.log(s_div);
-// console.log(computerOption());
